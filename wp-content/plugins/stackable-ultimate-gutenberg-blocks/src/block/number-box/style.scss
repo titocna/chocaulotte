@@ -1,0 +1,55 @@
+@import "../../common";
+
+/**
+ * #.# Styles for Number Box Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.ugb-number-box {
+	@include baseBlock();
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 (-$box-hori-padding / 2);
+	span,
+	.blocks-rich-text span {
+		background-color: var(--s-primary-color, #ddd);
+		color: #fff;
+		border-radius: 100%;
+		font-size: 3em;
+		display: block;
+		padding: 0;
+		text-align: center;
+		overflow: hidden;
+		margin: 0 auto;
+		height: 2.5em;
+		width: 2.5em;
+		line-height: 2.5em !important;
+	}
+	> div {
+		text-align: center;
+		@include baseBlock();
+		@include box();
+		flex: 1;
+		min-width: 250px;
+		&,
+		&:first-child,
+		&:last-child {
+			margin: ($box-hori-padding / 2) !important;
+		}
+		p {
+			text-align: center;
+		}
+	}
+}
+
+.ugb-number-box.column-1 {
+	> div:nth-child(2),
+	> div:nth-child(3) {
+		display: none;
+	}
+}
+.ugb-number-box.column-2 {
+	> div:nth-child(3) {
+		display: none;
+	}
+}

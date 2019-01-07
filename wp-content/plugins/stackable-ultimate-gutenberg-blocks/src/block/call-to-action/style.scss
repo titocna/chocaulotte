@@ -1,0 +1,31 @@
+@import "../../common";
+
+/**
+ * #.# Styles for CTA Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.ugb-cta {
+	text-align: center;
+	background-color: #f4f4f4;
+	@include baseBlock();
+	@include box();
+	.ugb-content-wrapper {
+		@include baseBlock();
+	}
+	.ugb-button {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+.wp-block-ugb-button .wp-ugb-button:hover {
+	color: #fff;
+}
+
+.ugb-cta.ugb-design-plain {
+	box-shadow: none;
+	border-radius: 0;
+	padding: 0;
+	overflow: visible;
+	background: transparent;
+}

@@ -1,0 +1,28 @@
+/**
+ * #.# Editor Styles for Icon List Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+// Hide the color picker panel header since we don't allow it to be closed.
+.ugb-icon-list-color-picker {
+	border-top: none !important;
+	.components-panel__body-title {
+		display: none !important;
+	}
+	.component-color-indicator {
+		vertical-align: bottom !important;
+	}
+}
+
+// UL is a child when in block form, remove the bullets.
+.ugb-icon-list ul {
+	list-style: none !important;
+}
+
+// Hide the list formatting toolbar buttons since we cannot use those.
+// Depends on https://github.com/WordPress/gutenberg/pull/12527
+.editor-block-list__block[data-type="ugb/icon-list"] .list-format-toolbar {
+	display: none;
+}

@@ -1,0 +1,17 @@
+/**
+ * #.# Editor Styles for Team Member Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.ugb-team-member.columns-1 {
+	> *:nth-child(2),
+	> *:nth-child(3) {
+		display: none;
+	}
+}
+.ugb-team-member.columns-2 {
+	> *:nth-child(3) {
+		display: none;
+	}
+}

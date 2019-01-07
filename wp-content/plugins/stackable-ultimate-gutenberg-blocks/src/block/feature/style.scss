@@ -1,0 +1,80 @@
+@import "../../common";
+
+/**
+ * #.# Styles for Feature Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.ugb-feature {
+	@include baseBlock();
+	.ugb-feature-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 (-$box-hori-padding / 2);
+		> div {
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			@include baseBlock();
+			margin: 0 ($box-hori-padding / 2);
+		}
+	}
+	&.ugb-invert .ugb-feature-wrapper {
+		flex-direction: row-reverse;
+	}
+	.ugb-feature-image-side {
+		align-items: center;
+		img {
+			max-width: var(--image-size, 400px);
+			width: var(--image-size, 400px);
+		}
+	}
+	&.ugb-content-left {
+		text-align: left;
+	}
+	&.ugb-content-center {
+		text-align: center;
+	}
+	&.ugb-content-right {
+		text-align: right;
+	}
+	&.alignfull {
+		.ugb-feature-wrapper {
+			max-width: var(--content-width, 900px);
+			margin: 0 auto;
+		}
+	}
+	&.ugb-has-background {
+		@include box();
+	}
+	&.alignfull.ugb-has-background {
+		border-radius: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+// Collapse into a single column on small screens, always put image on top.
+@media screen and (max-width: 768px) {
+	.ugb-feature {
+		.ugb-feature-wrapper,
+		&.ugb-invert .ugb-feature-wrapper {
+			flex-direction: column-reverse;
+		}
+		.ugb-feature-wrapper {
+			text-align: center;
+			> div:first-child {
+				margin-top: $box-vert-padding;
+			}
+			.ugb-feature-image-side {
+				img {
+					width: 60vw;
+				}
+			}
+		}
+		.ugb-button {
+			margin: 0 auto;
+		}
+	}
+}

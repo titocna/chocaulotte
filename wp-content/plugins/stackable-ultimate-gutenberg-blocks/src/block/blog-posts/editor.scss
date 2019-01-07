@@ -1,0 +1,19 @@
+@import "../../common";
+
+/**
+ * #.# Editor Styles for Blog Posts Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+[data-type="ugb/blog-posts"][data-align="center"] {
+	text-align: inherit;
+}
+
+// No border-radius for full width 1 column.
+[data-type="ugb/blog-posts"][data-align="full"] {
+	.ugb-blog-posts {
+		padding-left: $box-hori-padding;
+		padding-right: $box-hori-padding;
+	}
+}

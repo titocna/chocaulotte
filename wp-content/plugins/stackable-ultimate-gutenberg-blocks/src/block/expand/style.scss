@@ -1,0 +1,24 @@
+@import "../../common";
+
+/**
+ * #.# Styles for Toggle Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-ugb-expand {
+	@include baseBlock();
+	p:last-child {
+		margin-bottom: 0;
+	}
+	&.ugb-more {
+		.ugb-expand-less-text,
+		.ugb-expand-more {
+			display: none;
+		}
+		.ugb-expand-more-text,
+		.ugb-expand-less {
+			display: block !important;
+		}
+	}
+}

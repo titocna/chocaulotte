@@ -1,0 +1,82 @@
+@import "../../common";
+
+/**
+ * #.# Editor Styles for Image Box Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.ugb-image-box {
+	a {
+		pointer-events: none;
+	}
+	h4,
+	p {
+		pointer-events: all !important;
+	}
+	// Visible placeholders do not work since they grab focus.
+	[data-is-placeholder-visible="true"] + * {
+		pointer-events: none !important;
+	}
+}
+
+.ugb-image-box-wrapper.columns-1 {
+	> *:nth-child(2),
+	> *:nth-child(3),
+	> *:nth-child(4) {
+		display: none;
+	}
+}
+.ugb-image-box-wrapper.columns-2 {
+	> *:nth-child(3),
+	> *:nth-child(4) {
+		display: none;
+	}
+}
+.ugb-image-box-wrapper.columns-3 {
+	> *:nth-child(4) {
+		display: none;
+	}
+}
+
+// No border-radius for full width 1 column.
+[data-type="ugb/image-box"][data-align="full"] {
+	.ugb-image-box-wrapper.columns-1 {
+		.ugb-image-box {
+			border-radius: 0;
+		}
+	}
+	.ugb-image-box-wrapper:not(.columns-1) {
+		padding-left: $box-hori-padding;
+		padding-right: $box-hori-padding;
+	}
+}
+
+// Center single images.
+[data-type="ugb/image-box"]:not([data-align="wide"]):not([data-align="full"]) {
+	.ugb-image-box-wrapper.columns-1 {
+		.ugb-image-box {
+			margin: 0 auto;
+		}
+	}
+}
+
+// Make the image placeholder take the whole space.
+.ugb-image-box {
+	.ugb-image-upload-placeholder.ugb-image-upload-has-placeholder {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+// Only show placeholder text while selected or typing.
+[data-type="ugb/image-box"]:not(.is-selected):not(.is-typing) {
+	[data-is-placeholder-visible="true"] + .editor-rich-text__tinymce {
+		display: none;
+	}
+	.ugb-button[data-is-placeholder-visible="true"] {
+		display: none;
+	}
+}

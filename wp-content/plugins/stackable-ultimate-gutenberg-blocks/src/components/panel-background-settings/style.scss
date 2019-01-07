@@ -1,0 +1,38 @@
+@import "../../common";
+
+/**
+ * Background/boxed styles
+ */
+.ugb-has-background {
+	@include box();
+}
+.ugb-has-background-image {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	&::before {
+		display: block !important;
+		content: "";
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-color: var(--ugb-background-color, #fff);
+	}
+	> * {
+		position: relative;
+		z-index: 2;
+	}
+}
+.alignfull.ugb-has-background {
+	border-radius: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+@for $i from 0 through 10 {
+	.ugb-has-background-opacity-#{ $i }::before {
+		opacity: $i * 0.1;
+	}
+}

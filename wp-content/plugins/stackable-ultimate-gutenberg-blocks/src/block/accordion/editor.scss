@@ -1,0 +1,27 @@
+/**
+ * #.# Editor Styles for Accordion Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+// Only show placeholder text while selected or typing.
+[data-type="ugb/accordion"] {
+	.ugb-accordion__heading {
+		svg {
+			transform: rotate(180deg) !important;
+		}
+	}
+}
+
+// Animate accordion arrow.
+[data-type="ugb/accordion"]:not(.is-selected):not(.is-typing) {
+	.ugb-accordion:not(.ugb-open-start) .ugb-accordion__text {
+		display: none;
+	}
+	.ugb-accordion:not(.ugb-open-start) .ugb-accordion__heading {
+		svg {
+			transform: rotate(0deg) !important;
+		}
+	}
+}

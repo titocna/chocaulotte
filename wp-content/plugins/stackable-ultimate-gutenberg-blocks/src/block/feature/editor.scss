@@ -1,0 +1,37 @@
+/**
+ * #.# Editor Styles for Feature Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+// Remove border radius on full width.
+[data-align="full"] {
+	.ugb-feature.ugb-has-background {
+		border-radius: 0 !important;
+	}
+	.ugb-feature .ugb-feature-wrapper {
+		max-width: var(--content-width, 900px);
+		margin: 0 auto;
+	}
+}
+
+// Fade out placeholder text.
+.ugb-feature {
+	[data-is-placeholder-visible="true"] + .editor-rich-text__tinymce {
+		opacity: 0.5;
+	}
+}
+
+// Only show placeholder text while selected or typing.
+[data-type="ugb/feature"]:not(.is-selected):not(.is-typing) {
+	[data-is-placeholder-visible="true"] + .editor-rich-text__tinymce {
+		display: none;
+	}
+	.ugb-button[data-is-placeholder-visible="true"] {
+		display: none;
+	}
+}
+
+.ugb-feature .ugb-feature-image-side .ugb-image-upload-placeholder.ugb-image-upload-has-placeholder {
+	height: 250px;
+}

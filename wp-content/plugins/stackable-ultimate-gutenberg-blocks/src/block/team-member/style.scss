@@ -1,0 +1,101 @@
+@import "../../common";
+
+/**
+ * #.# Styles for Team Member Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.ugb-team-member {
+	@include baseBlock();
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 (-$box-hori-padding / 2);
+
+	.team-member-image {
+		width: 300px;
+		height: 300px;
+		background-size: cover;
+		background-position: center;
+	}
+	&.columns-2 {
+		.team-member-image {
+			width: 220px;
+			height: 220px;
+		}
+	}
+	&.columns-3 {
+		.team-member-image {
+			width: 150px;
+			height: 150px;
+		}
+	}
+	&.image-circle .team-member-image {
+		border-radius: 100%;
+	}
+
+	> div {
+		text-align: center;
+		@include baseBlock();
+		p {
+			text-align: center;
+		}
+		flex: 1;
+		min-width: 250px;
+		&,
+		&:first-child,
+		&:last-child {
+			margin: ($box-hori-padding / 2) !important;
+		}
+	}
+	.ugb-team-member-position {
+		opacity: 0.7;
+	}
+}
+
+/**
+ * Deprecated. < v1.5
+ */
+.ugb-team-member {
+	h4 {
+		margin: 0 0 0.5rem !important;
+		padding-top: 0;
+	}
+	.team-member-image {
+		margin: 0 auto 1.3rem;
+	}
+	&.column-2 {
+		.team-member-image {
+			width: 220px;
+			height: 220px;
+		}
+	}
+	&.column-3 {
+		.team-member-image {
+			width: 150px;
+			height: 150px;
+		}
+	}
+	.ugb-team-member-position {
+		opacity: 0.3;
+		font-size: 0.75em;
+		text-transform: uppercase;
+	}
+	.ugb-team-member-des,
+	.ugb-team-member-des-two,
+	.ugb-team-member-des-three {
+		opacity: 0.5;
+		margin: 0 0 1rem;
+		left: 0;
+	}
+}
+.ugb-team-member.column-1 {
+	.ugb-team-member-column-two,
+	.ugb-team-member-column-three {
+		display: none;
+	}
+}
+.ugb-team-member.column-2 {
+	.ugb-team-member-column-three {
+		display: none;
+	}
+}

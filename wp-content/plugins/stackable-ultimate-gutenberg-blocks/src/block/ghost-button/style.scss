@@ -1,0 +1,20 @@
+/**
+ * #.# Styles for Ghost Button Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.ugb-button.ugb-ghost-button {
+	background-color: transparent;
+	border: 2px solid var(--s-primary-color, #2091e1);
+	.ugb-button-inner {
+		color: var(--s-primary-color, #2091e1);
+	}
+	&:hover {
+		opacity: 0.85;
+		box-shadow: none !important;
+		.ugb-button-inner {
+			color: var(--s-primary-color, #2091e1);
+		}
+	}
+}

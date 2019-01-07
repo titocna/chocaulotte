@@ -1,0 +1,15 @@
+/**
+ * #.# Editor Styles for Header Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+[data-align="full"] .ugb-blockquote.ugb-has-background {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	&::after {
+		left: calc(10vw - 70px);
+	}
+}
