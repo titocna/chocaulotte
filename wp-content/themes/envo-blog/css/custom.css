@@ -1,0 +1,32 @@
+body{
+    font-family: "Raleway Medium";
+}
+
+#site-navigation{
+    background-image: url("http://chocaulotte.nc/wp-content/uploads/2019/01/HEADDER.png");
+    background-repeat: revert;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    color: #603913;
+}
+
+.main-container{
+    background-color: #fffbf7;
+}
+
+.nav > li > a{
+    color: #603913 !important;
+}
+
+.nav > li > a:hover{
+    color: #a57b5a !important;
+}
+
+.nav > li > a::before{
+    background-color: #fffbf7;
+}
+
+.nav > li.active > a::after{
+    background-color: #fffbf7;
+}
