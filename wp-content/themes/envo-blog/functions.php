@@ -283,15 +283,9 @@ if ( !function_exists( 'envo_blog_generate_construct_footer' ) ) :
 	function envo_blog_generate_construct_footer() {
 		?>
 		<p class="footer-credits-text text-center">
-			<?php 
-			/* translators: %s: WordPress name with wordpress.org URL */
-			printf( esc_html__( 'Proudly powered by %s', 'envo-blog' ), '<a href="' . esc_url( __( 'https://wordpress.org/', 'envo-blog' ) ) . '">WordPress</a>' );
-			?>
+			2019
 			<span class="sep"> | </span>
-			<?php
-			/* translators: %1$s: Envo Blog name with envothemes.com URL */
-			printf( esc_html__( 'Theme: %1$s', 'envo-blog' ), '<a href="' . esc_url( 'http://envothemes.com/' ) . '">Envo Blog</a>' );
-			?>
+			Choc'Aulotte
 		</p> 
 		<?php
 	}

@@ -30,3 +30,70 @@ body{
 .nav > li.active > a::after{
     background-color: #fffbf7;
 }
+
+.wonderplugin3dcarousel-title{
+    color: #603913;
+    font-weight: 600;
+}
+
+.wonderplugin3dcarousel-description{
+    color: #603913;
+    font-weight: 500;
+}
+
+.title-chocolate{
+    font-family: "Aston Script";
+    color: #8c6239;
+}
+
+#kt-layout-id_232433-00 > .kt-row-column-wrap{
+    margin-left: 25% !important;
+}
+
+.wp-block-image{
+    margin-left: -15px;
+    mix-blend-mode: multiply;
+    margin-top: -15%;
+}
+
+#content-footer-section{
+    background-color: #603913;
+    color: #bb9f84;
+    margin-top: -40px;
+    padding-top: 80px;
+}
+
+.widget-title h3{
+    color: #603913;
+    background: #bb9f84;
+}
+
+.widget-title::after {
+    background-color: #bb9f84;
+}
+
+#colophon{
+    background-color: #603913;
+}
+
+#colophon p{
+    margin: 0 0 0 10px !important;
+}
+
+.footer-credits-text{
+    color: #8c6239;
+}
+
+.textwidget{
+    line-height: 1.7;
+}
+
+.textwidget a{
+    color: #bb9f84;
+    font-family: "Raleway Medium";
+}
+
+.picto-footer{
+    margin-left: 30px;
+    font-family: "Raleway Medium";
+}

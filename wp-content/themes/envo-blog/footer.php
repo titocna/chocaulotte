@@ -10,7 +10,7 @@
 <?php do_action( 'envo_blog_before_footer' ); ?> 
 <footer id="colophon" class="footer-credits container-fluid">
 	<div class="container">
-		<?php do_action( 'envo_blog_generate_footer' ); ?> 
+		<?php do_action( 'envo_blog_generate_footer' ); ?>
 	</div>	
 </footer>
 <?php do_action( 'envo_blog_after_footer' ); ?> 
