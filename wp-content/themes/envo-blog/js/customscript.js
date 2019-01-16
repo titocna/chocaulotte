@@ -44,8 +44,6 @@ jQuery( document ).ready( function ( $ ) {
       });
 
     $('a:contains("WordPress")').css("display", "none");
-
-    $('.single-title').css('display', 'none');
 } );
 
 jQuery( window ).on( 'load resize', function () {   

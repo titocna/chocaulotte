@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Nineteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-24 17:11:25+0000\n"
+"PO-Revision-Date: 2019-01-10 12:30:55+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: Themes - Twenty Nineteen\n"
+
+#. Description of the theme
+msgid "Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes."
+msgstr "Notre thème par défaut 2019 est conçu pour afficher la puissance de l’éditeur de blocs. Il comporte des styles personnalisés pour tous les blocs par défaut, et est construit pour que ce que vous voyez dans l’éditeur ressemble à ce que vous verrez sur votre site Web. Twenty Nineteen est conçu pour s’adapter à un large éventail de sites Web, que vous exploitiez un blog photo, que vous lanciez une nouvelle entreprise ou souteniez un organisme à but non lucratif. Doté d’un large espace blanc, de titres modernes sans empattement, couplés à un corps de texte classique à empattement, il est conçu pour être beau sur toutes les tailles d’écran."
 
 #. Theme Name of the theme
 msgid "Twenty Nineteen"

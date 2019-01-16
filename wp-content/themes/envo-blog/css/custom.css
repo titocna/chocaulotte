@@ -1,5 +1,6 @@
 body{
     font-family: "Raleway Medium";
+    color: #603913;
 }
 
 #site-navigation{
@@ -46,20 +47,19 @@ body{
     color: #8c6239;
 }
 
-#kt-layout-id_232433-00 > .kt-row-column-wrap{
+#kt-layout-id_93234a-d1 > .kt-row-column-wrap{
     margin-left: 25% !important;
 }
 
 .wp-block-image{
     margin-left: -15px;
     mix-blend-mode: multiply;
-    margin-top: -15%;
+    margin-top: -20%;
 }
 
 #content-footer-section{
     background-color: #603913;
     color: #bb9f84;
-    margin-top: -40px;
     padding-top: 80px;
 }
 
@@ -96,4 +96,22 @@ body{
 .picto-footer{
     margin-left: 30px;
     font-family: "Raleway Medium";
+}
+
+.chocolat-back{
+    position: relative;
+    bottom: -40px;
+}
+
+.single-title{
+    font-family: "Raleway Medium";
+    color: #603913;
+}
+
+.home .single-title{
+    display: none;
+}
+
+.single-meta{
+    display: none;
 }
