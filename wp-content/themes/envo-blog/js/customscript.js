@@ -44,6 +44,16 @@ jQuery( document ).ready( function ( $ ) {
       });
 
     $('a:contains("WordPress")').css("display", "none");
+
+    $('.site-header').click(function () {
+        window.location.href = "http://chocaulotte.nc";
+    });
+
+    $('.wpcf7-submit').addClass('btn btn-default');
+
+    $('#wpcf7-f197-p269-o1').removeClass('wpcf7');
+    $('#wpcf7-f197-p269-o1').addClass('col-md-offset-3 col-md-6 text-center');
+
 } );
 
 jQuery( window ).on( 'load resize', function () {   

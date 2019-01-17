@@ -47,7 +47,7 @@ body{
     color: #8c6239;
 }
 
-#kt-layout-id_93234a-d1 > .kt-row-column-wrap{
+#kt-layout-id_279e95-be > .kt-row-column-wrap{
     margin-left: 25% !important;
 }
 
@@ -114,4 +114,17 @@ body{
 
 .single-meta{
     display: none;
+}
+
+.site-header{
+    cursor: pointer;
+}
+
+.half-form{
+    display: inline-flex;
+    width: 100%;
+}
+
+.half-form input{
+    width: 99%;
 }
