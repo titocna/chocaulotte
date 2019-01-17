@@ -1728,14 +1728,14 @@ p.demo_store,
 	unicode-bidi: embed;
 }
 
-.woocommerce-message {
-	border-top-color: #8fae1b;
-
-	&::before {
-		content: '\e015';
-		color: #8fae1b;
-	}
-}
+//.woocommerce-message {
+//	border-top-color: #8fae1b;
+//
+//	&::before {
+//		content: '\e015';
+//		color: #8fae1b;
+//	}
+//}
 
 .woocommerce-info {
 	border-top-color: #1e85be;

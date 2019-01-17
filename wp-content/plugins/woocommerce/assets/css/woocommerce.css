@@ -1808,14 +1808,6 @@ p.demo_store a,
   unicode-bidi: embed;
 }
 
-.woocommerce-message {
-  border-top-color: #8fae1b;
-}
-.woocommerce-message::before {
-  content: "";
-  color: #8fae1b;
-}
-
 .woocommerce-info {
   border-top-color: #1e85be;
 }

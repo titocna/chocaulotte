@@ -128,3 +128,7 @@ body{
 .half-form input{
     width: 99%;
 }
+
+.woocommerce-cart #payment, .woocommerce-checkout #payment, #add_payment_method #payment{
+    background: none;
+}
